@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_store_app/consts/theme_data.dart';
 import 'package:flutter_store_app/provider/dark_theme_provider.dart';
+import 'package:flutter_store_app/screens/btm_bar.dart';
 import 'package:flutter_store_app/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -43,7 +44,7 @@ class _MyAppState extends State<MyApp> {
           debugShowCheckedModeBanner: false,
           title: 'Store App',
           theme: Styles.themeData(themeProvider.getDarkTheme, context),
-          home: const HomeScreen(),
+          home: const BottomBarScreen(),
         );
       }),
     );
